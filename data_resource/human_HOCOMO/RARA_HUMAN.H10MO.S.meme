@@ -1,0 +1,19 @@
+MEME version 4.4
+
+ALPHABET= ACGT
+
+strands: + -
+
+Background letter frequencies (from uniform background):
+A 0.25000 C 0.25000 G 0.25000 T 0.25000 
+
+MOTIF RARA_HUMAN.H10MO.S
+
+letter-probability matrix: alength= 4 w= 7 nsites= 58 E= 0
+0.19130824010583702	0.3372569807785681	0.3901026394147181	0.08133213970087681
+1.0	0.0	0.0	0.0
+0.0	0.0	1.0	0.0
+0.0	0.0	1.0	0.0
+0.0	0.0	0.0	1.0
+0.0	1.0	0.0	0.0
+1.0	0.0	0.0	0.0
