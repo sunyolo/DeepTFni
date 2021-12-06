@@ -1,0 +1,5 @@
+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
+
+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
+
+git remote set-url origin  https://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@github.com/sunyolo/DeepTFni.git
