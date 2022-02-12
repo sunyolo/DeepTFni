@@ -8,7 +8,7 @@ count matrix. The output of DeepTFni is the imputed TRN.
 TRN is represented as an undirected graph, where V nodes represent TFs and 
 E edges represent their interactions. The input of DeepTFni is solely a scATAC-seq
 count matrix. The output of DeepTFni is the imputed TRN. Taking TRN inference as a link prediction task, DeepTFni workflow is organized as follows:
-![](https://github.com/sunyolo/DeepTFni/tree/main/data_resource/DeepTFni workflow.pdf)
+![image](https://github.com/sunyolo/DeepTFni/blob/main/data_resource/DeepTFni%20workflow.pdf)
 
 ## Dependency
 DeepTFni is mostly written in Python 3.6 and some preprocessing steps are done in Perl 5. It can be run on a single desktop using Linux platform. To run DeepTFni, some prerequisites need to be installed. A detailed dependency list is:
