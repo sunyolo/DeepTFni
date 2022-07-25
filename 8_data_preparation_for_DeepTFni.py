@@ -1,3 +1,4 @@
+#-*- coding: UTF-8 -*-  
 from __future__ import division
 from __future__ import print_function
 import argparse
@@ -28,9 +29,9 @@ kf = KFold(n_splits=k_fold_num)
 base_dir = os.getcwd()
 input_adj_file = base_dir+"/Adjacency_matrix/{}.txt".format(sample_type)
 
-# loading ddjacency matrix
-df_ = pd.read_csv(input_adj_file, sep="\t")
-df = df_.values[:,1:]
+# Read adjacency matrix
+df_ = pd.read_csv(input_adj_file, sep="\t",index_col=0)
+df = df_.values
 adj = sp.csr_matrix(df.astype(int))
 
 # Remove diagonal elements
@@ -102,8 +103,8 @@ for m in range (1,replicates_num+1):
         np.savetxt(out_dir + '/adj_matrix_for_test_postive_negative_edges_k_' + str(i) + '.txt',
                    adj_test_postive_negative.todense().A, fmt='%d',
                    delimiter='\t')
-        df_ = pd.read_csv(input_adj_file, sep="\t")
-        df = df_.values[:, 1:]
+        df_ = pd.read_csv(input_adj_file, sep="\t", index_col=0)
+        df = df_.values
         adj_curr = sp.csr_matrix(df.astype(int))
         
     ###################################################################
