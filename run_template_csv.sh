@@ -7,7 +7,7 @@ reference="template"
 echo "using reference $reference"
 
 ##### 	generate initial adjacency matrix	#####
-command_1=`perl 1-ATAC_peaks-2.pl $sample_type $reference`
+command_1=`perl 1-ATAC_peaks.pl $sample_type $reference`
 echo $command_1
 
 #####	generate RP score using MAESTRO	#####
@@ -36,3 +36,4 @@ echo $command_7
 
 #####		organize file		#####
 #echo "mv ./$sample_type/file_to_remove"
+
